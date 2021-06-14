@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 typedef struct node{
     int value;
@@ -7,10 +8,13 @@ typedef struct node{
 }Node;
 
 int main(){
-    Node n1;
-    n1.value = 1;
-    n1.next = NULL;
+    Node* nodes;
     
+    nodes = (Node*) malloc(sizeof(nodes) * 10);
+    
+    
+    
+    free(nodes);
 
     return 0;
 }

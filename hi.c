@@ -1,15 +1,16 @@
 #include <stdio.h>
 
-typedef struct node{
-    int value;
-    struct node* next;
-}Node;
+
 
 int main(){
-    Node n1;
-    n1.value = 1;
-    n1.next = NULL;
+    int a = 10;
+    int b = 5;
     
-
+    printf("hello1\n");
+    printf("hello2\n");
+    printf("hello3\n");
+    printf("hello4\n");
+    printf("hello5\n");
+    
     return 0;
 }

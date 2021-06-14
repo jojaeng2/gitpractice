@@ -10,12 +10,12 @@ typedef struct node{
 int main(){
     Node* nodes;
     
-    nodes = (Node*) malloc(sizeof(nodes) * 10);
+    nodes = (struct node*) malloc(sizeof(struct node) * 10);
     
     
     for(int i = 1; i < 10; i++){
         nodes[i].value = i;
-        nodes[i].next = NULL;
+        nodes[i].next;
         nodes[i].x = 11;
         nodes[i].y = 21;
     }

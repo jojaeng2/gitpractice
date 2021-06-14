@@ -2,7 +2,6 @@
 
 typedef struct node{
     int value;
-    int x, y;
     struct node* next;
 }Node;
 

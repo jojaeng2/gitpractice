@@ -10,6 +10,5 @@ int main(){
     n1.value = 1;
     n1.next = NULL;
     
-
     return 0;
 }

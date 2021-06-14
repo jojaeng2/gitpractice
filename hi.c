@@ -6,7 +6,10 @@ typedef struct node{
 }Node;
 
 int main(){
-    printf("hi\n");
+    Node n1;
+    n1.value = 1;
+    n1.next = NULL;
+    
 
     return 0;
 }

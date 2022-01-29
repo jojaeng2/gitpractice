@@ -1,21 +1,20 @@
 #!/bin/bash
 
-git switch dev
-
 echo "Enter new branch name: "
 read newbranch
 
 git checkout --orphan $newbranch
 git rm --cached -r .
 
-# rm -rf *
-find . ! -name .git -delete
+# rm -ri *
+
+find . ! -name make-branch.sh -exec rm {} \;
 
 echo "Delete unnecessary function files ..."
 
+commitmsg="init"
+
 git add .
-echo "Enter commit message: "
-read commitmsg
 git commit -m $commitmsg
 git push origin $newbranch
 

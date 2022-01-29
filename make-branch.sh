@@ -6,15 +6,13 @@ read newbranch
 git checkout --orphan $newbranch
 git rm --cached -r .
 
-find . \! \( -type d -name .git -prune \) \! -name make-branch.sh -delete
-
+find . \! \( -type d -name .git -prune \) \! -name make-branch.sh -exec rm -rf {} \;
 
 echo "Delete unnecessary function files ..."
 
 commitmsg="init"
 
 git add .
-
 git commit -m $commitmsg
 git push origin $newbranch
 

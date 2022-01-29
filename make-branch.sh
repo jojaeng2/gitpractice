@@ -8,7 +8,7 @@ git rm --cached -r .
 
 # rm -ri *
 
-find . ! -name make-branch.sh -exec rm {} \;
+find . ! -name .git/ make-branch.sh -delete
 
 echo "Delete unnecessary function files ..."
 

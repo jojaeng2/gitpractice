@@ -8,11 +8,13 @@ git rm --cached -r .
 
 find . \! \( -type d -name .git -prune \) \! -name make-branch.sh -delete
 
+
 echo "Delete unnecessary function files ..."
 
 commitmsg="init"
 
 git add .
+
 git commit -m $commitmsg
 git push origin $newbranch
 

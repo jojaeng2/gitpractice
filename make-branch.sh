@@ -8,8 +8,8 @@ read newbranch
 git checkout --orphan $newbranch
 git rm --cached -r .
 
-rm -rf *
-# find . ! -name make-branch.sh .git -delete
+# rm -rf *
+find . ! -name .git -delete
 
 echo "Delete unnecessary function files ..."
 

@@ -1,4 +1,4 @@
 # gitpractice
 
 
-python 브랜치입니다.
+dev 브랜치입니다.
